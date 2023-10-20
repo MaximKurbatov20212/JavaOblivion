@@ -13,6 +13,7 @@ public class User {
 
     public boolean getBookFromLibrary(Media media, Library library) {
         Media desireMedia = library.getMedia(media);
+
         if (desireMedia == null) return false;
         return books.add(desireMedia);
     }

@@ -5,6 +5,7 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         Media m1 = new Book("mark", "fantasy", 100);
+        Media m11 = new Book("mark", "fantasy", 100);
         Media m2 = new Book("mark1", "horror", 200);
         Media m3 = new AudioBook("mark2", "roman", 300);
         Media m4 = new AudioBook("markTwen", "horror", 400);
@@ -17,7 +18,7 @@ public class Main {
 
         User user = new User();
 
-        user.getBookFromLibrary(m1, library);
+        user.getBookFromLibrary(m11, library);
         System.out.println(user.getBooks());
         System.out.println(library.getBooks());
     }

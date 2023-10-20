@@ -22,10 +22,8 @@ public class Library {
     }
 
     public Media getMedia(Media media) {
-        Media desireMedia = books.stream()
-                .filter(m -> Objects.equals(m, media))
-                .findFirst()
-                .orElse(null);
+        Media desireMedia = books.stream().filter(media1 -> media1.comp)
+
 
         if (desireMedia == null) return null;
         books.remove(desireMedia);
